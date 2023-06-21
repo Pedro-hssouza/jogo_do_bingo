@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bingo</h1>
+    </header>
+
+    <main>
+      <section id="area_cartelas">
+        <div id="cartelas">
+          <h3>Cartelas</h3>
+          <button class="gerar-tabela" onclick="gerarCartela()">
+            Gerar tabela
+          </button>
+          <button class="resetar-jogo" onclick="reiniciarJogo()">
+            Resetar jogo
+          </button>
+        </div>
+        <div id="body_cartelas"></div>
+        <div id="janela_vitoria"></div>
+      </section>
+
+      <section id="area_bingo">
+        <div id="numeros">
+          <button onclick="sortearNumero()">Jogar</button>
+          <div id="numeros_sorteados"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h4>Developed by Pedro Santos</h4>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

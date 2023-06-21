@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    height: 80px;
+    background-color: #4287f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header h1 {
+    color: #ffffff;
+    font-size: 32px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  #area_cartelas {
+    width: 70%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #area_bingo {
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #cartelas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  button.gerar-tabela {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button.resetar-jogo {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  #body_cartelas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .cartela {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .cartela caption {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .cartela th,
+  .cartela td {
+    border: 2px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .cartela th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  
+  .cartela td {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  #cartela td.x {
+    background-color: #cccccc;
+    color: #ffffff;
+  }
+  
+  #cartela td.selected {
+    background-color: #4287f5;
+    color: #ffffff;
+  }
+  
+  #area_bingo button {
+    width: 100%;
+    height: 40px;
+    background-color: #4287f5;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #area_bingo button:hover {
+    background-color: #3366cc;
+  }
+  
+  #janela_vitoria {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+    text-align: center;
+  }
+  
+  #janela_vitoria h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #janela_vitoria p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0px;
+    height: 2vh;
+    background-color: antiquewhite;
+    display: flex;              
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
